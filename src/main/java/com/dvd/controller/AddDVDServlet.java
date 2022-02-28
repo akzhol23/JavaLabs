@@ -36,7 +36,7 @@ public class AddDVDServlet extends HttpServlet {
         }
         else {
             request.setAttribute("errors", errors);
-            rd = request.getRequestDispatcher("/error.view");
+            rd = request.getRequestDispatcher("/add_dvd.view");
             rd.forward(request, response);
         }
     }

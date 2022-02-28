@@ -13,4 +13,3 @@
 <a href="add_dvd.jsp">Add DVD to Library</a>
 </body>
 </html>
-
