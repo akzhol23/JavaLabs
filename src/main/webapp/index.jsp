@@ -10,6 +10,6 @@
 <br/>
 <a href="list_library.view">Display my DVD Library</a>
 <br/>
-<a href="add_dvd.jsp">Add DVD to Library</a>
+<a href="add_dvd.view">Add DVD to Library</a>
 </body>
 </html>

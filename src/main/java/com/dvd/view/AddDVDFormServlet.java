@@ -61,6 +61,7 @@ public class AddDVDFormServlet extends HttpServlet {
             paramTitle = "";
         }
         out.println("Title: <input type='text' name='title' value='"+ paramTitle +"'/> <br/><br/>");
+        out.println("Year: <input type='text' name='year'><br/><br/>");
         String genre = request.getParameter("genre");
         out.println("Genre: <select name='genre'>");
         if ((genre == null) || genre.equals("UNKNOWN")) {
@@ -73,7 +74,8 @@ public class AddDVDFormServlet extends HttpServlet {
             }
             out.println(">" + genres[i] + "</option>");
         }
-        out.println("</select><br/><br/>");
+        out.print("</select><br/><br/>");
+        out.println(" or new genre: <input type='text' name='newGenre'><br/><br/>");
         out.println("<input type='Submit' value='Add DVD' />");
         out.println("</form>");
         out.println("</body>");
