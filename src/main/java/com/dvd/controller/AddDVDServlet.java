@@ -16,7 +16,7 @@ public class AddDVDServlet extends HttpServlet {
         String title = request.getParameter("title");
         String year = request.getParameter("year");
         String genre = request.getParameter("genre");
-        String newgenre = request.getParameter("newgenre");
+        String newgenre = request.getParameter("newGenre");
         if (newgenre != null && newgenre.length() != 0) {
             genre = newgenre;
         }

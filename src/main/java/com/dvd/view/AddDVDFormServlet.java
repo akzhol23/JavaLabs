@@ -11,7 +11,7 @@ import java.util.List;
 
 @WebServlet(name = "AddDVDFormServlet", value = "/add_dvd.view")
 public class AddDVDFormServlet extends HttpServlet {
-    private static final String default_genres = "Sci-Fi,Drama,Comedy";
+    private static final String default_genres = "Sci-Fi,Drama,Comedy,Musical,Romance,Action";
     private String[] genres;
 
     public void init() {
