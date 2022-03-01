@@ -27,6 +27,12 @@ public class AddDVDServlet extends HttpServlet {
         if (year == null || year.length() == 0) {
             errors.add("Year cannot be empty.");
         }
+        if (year != null && !year.matches("\\d\\d\\d\\d")) {
+            errors.add("Year must be four digits long");
+        }
+        if (genre.equals("UNKNOWN")) {
+            errors.add("Genre cannot be empty");
+        }
         RequestDispatcher rd;
         if (errors.isEmpty()) {
             DVDItem dvdItem = new DVDItem(title, year, genre);
